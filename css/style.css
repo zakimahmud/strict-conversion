@@ -1,0 +1,408 @@
+/*Global CSS Start*/
+*{
+margin: 0;
+padding: 0;
+font-family: 'lato', sans-serif;
+}
+.container
+{
+width: 1140px;
+margin: 0 auto;
+
+}
+
+.col-1
+{
+width: 8.33%;
+float: left;
+}
+
+.col-2
+{
+	width: 16.66%;
+	float: left;
+}
+
+.col-3
+{
+	width: 25%;
+	float:left;
+}
+
+.col-4{
+	width: 33.33%;
+	float: left;
+
+}
+
+.col-5{
+	width: 41.66%;
+	float:left;
+}
+
+.col-6{
+	width:50%;
+	float: left;
+}
+
+.col-7{
+	width: 58.33%;
+	float: left;
+}
+
+.col-8{
+	width: 66.66%;
+	float:left;
+
+}
+
+.col-9{
+	width: 75%;
+	float: left;
+}
+
+.col-10
+{
+   width: 83.33%;
+   float: left;
+}
+
+.col-11{
+   width: 91.66%;
+   float: left;	
+}
+
+.col-12{
+   width: 100%;
+   float: left;	
+}
+
+.row
+{
+	width: 100%;
+}
+
+
+.text-center{
+	text-align: center;
+}
+section
+{
+
+	float: left;
+	width: 100%;
+}
+
+/*Global CSS END*/
+
+/*Topbar CSS Start*/
+
+.topbar{
+background: #f6f9f9;
+height: 80px;
+}
+.topbar .logo
+{
+padding: 20px 0;
+}
+
+/*Banner Section Start*/
+.Banner
+{
+background: url(../image/banner-bg.png);
+height: 700px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+
+.Banner .fa{
+
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translate(-50%);
+	color: #fff;
+	font-size: 50px;
+}
+
+.Banner .hero-area
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+.Banner h1{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 120px;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.Banner .blueline{
+	width: 40%;
+	height: 2px;
+	background: #15a4fa;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+}
+.Banner p{
+color: #fff;
+text-align: center;
+margin-bottom: 40px;
+}
+.Banner .highlight{
+font-size: 20px;
+text-transform: uppercase;
+}
+.Banner .btn-cta
+{
+color: #fff;
+text-decoration: none;
+text-align: center;
+display: block;
+border: 1px solid #15a4fa;
+margin:0 auto;
+width: 13%;
+padding:15px 0;
+position: relative;
+}
+
+.Banner.btn-cta::after{
+content: "";
+background: #15a4fa;
+border: 1px solid #15a4fa;
+height: 100%;
+width: 0;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+
+}
+.Banner .btn-cta::before
+{
+content: "";
+background: #15a4fa;
+border: 1px solid #15a4fa;
+height: 100%;
+width: 0;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+
+.Banner .btn-cta:hover::after{
+transition: 1s ease-in-out;
+width: 100%;
+
+}
+.Banner .btn-cta:hover::before{
+transition: 0.5s ease-in-out;
+width: 100%;
+
+}
+/*About Section CSS*/
+.about{
+	padding: 80px 0;
+	background: #f6f9f9
+}
+.about h2{
+	color: #2d3950;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.about p{
+	color: #999;
+	font-size: 18px; 
+	line-height: 1.7;
+}
+
+/*Feature CSS Start*/
+.feature{
+padding: 80px 0;
+
+}
+
+.feature img{
+
+	margin-bottom: 20px;
+
+}
+ 
+.feature h3{
+	font-size: 22px;
+	color: ##2d3950;
+	margin-bottom: 25px;
+} 
+
+.feature p
+{
+color: #999;
+padding: 0 10%;
+
+}
+
+
+/*Feature CSS End*/
+
+/*Portfolio Section CSS Start*/
+
+.portfolio{
+
+	padding: 80px 0;
+
+}
+.portfolio h2{
+	color: #2d3950;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.portfolio p
+{
+	color: #999;
+	font-size: 18px; 
+	line-height: 1.7;
+	margin-bottom: 50px;
+}
+
+.portfolio-image{
+position: relative;
+margin: 10px;
+
+}
+.portfolio-image img{
+	width: 100%;
+}
+.portfolio-image .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2bacf7;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.portfolio-image:hover .hover{
+opacity: 0.7; 
+}
+.portfolio-image p{
+color: #fff; 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% -50%);
+}
+/*Portfolio Section CSS End*/
+
+/*contact css start*/
+.contact{
+
+	padding: 80px 0;
+        background: linear-gradient(rgba(45, 57, 80, .65),rgba(45, 57, 80, .65)), url(../image/contact-bg.png);
+    background-position: center;
+    background-size:cover;
+    min-height: 500px;
+}
+.contact h2{
+	color: #fff;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+.contact p 
+{
+	color: #999;
+	font-size: 18px; 
+	line-height: 1.7;
+	margin-bottom: 50px;
+}
+form{
+	width: 50%;
+	margin:0 auto;
+}
+form .form-control{
+width: 100%;
+margin-bottom: 20px;
+background: transparent;
+border: 1px solid #999;
+padding: 12px;
+border-radius: 3px;
+box-sizing: border-box;
+}
+form textarea{}
+
+.btn-submit{
+
+	color: #fff;
+	text-align: center;
+	border: 1px solid #15a4fa;
+	padding: 15px 50px;
+	background: transparent;
+	float: right;
+}
+
+input[type=checkbox]{
+
+	width: 20px;
+	height: 20px;
+	margin-right: 10px; 
+
+}
+form p{
+
+	float:left;
+	color: #fff !important;
+	margin-top: 10px;
+}
+
+.btn-submit:hover{
+
+	background:#15a4fa;
+	transition: all 0.5s ease-in-out;
+}
+
+
+/*contact css end*/
+
+/*Footer CSS start: */
+footer{
+	padding: 25px 0;
+	width: 100%;
+	float: left;
+	background: #f6f9f9;
+
+}
+footer p{
+	margin-top: 12px;
+	color: #999;
+}
+
+footer .social-icon{
+	float: right;
+}
+footer .social-icon a{
+	background: #15a4fa;
+	color: #fff;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	margin: 0 5px;
+}
+footer .social-icon .fa{
+;
+}
+
+/*Footer CSS start*/
